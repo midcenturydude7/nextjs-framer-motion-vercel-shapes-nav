@@ -16,6 +16,7 @@ export function useTabs({
     const indexOfInitialTab = tabs.findIndex((tab) => tab.id === initialTabId);
     return [indexOfInitialTab === -1 ? 0 : indexOfInitialTab, 0];
   });
+
   return {
     tabProps: {
       tabs,
