@@ -134,7 +134,7 @@ const Content = ({
   className?: string;
 }): JSX.Element => {
   return (
-    <AnimatePresence exitBeforeEnter={false} custom={direction}>
+    <AnimatePresence mode="wait" custom={direction}>
       <motion.div
         key={selectedTabIndex}
         variants={{

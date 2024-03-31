@@ -14,14 +14,14 @@ export default function App() {
         id: "Circle",
       },
       {
-        label: Square,
-        children: <Square />,
-        id: "Square",
-      },
-      {
         label: Triangle,
         children: <Triangle />,
         id: "Triangle",
+      },
+      {
+        label: Square,
+        children: <Square />,
+        id: "Square",
       },
     ],
     initialTabId: "Triangle",
@@ -35,14 +35,14 @@ export default function App() {
         id: "Circle",
       },
       {
-        label: "Square",
-        children: <Square />,
-        id: "Square",
-      },
-      {
         label: "Triangle",
         children: <Triangle />,
         id: "Triangle",
+      },
+      {
+        label: "Square",
+        children: <Square />,
+        id: "Square",
       },
     ],
     initialTabId: "Triangle",
