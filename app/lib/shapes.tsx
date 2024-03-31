@@ -30,7 +30,7 @@ export function Square() {
         width="300"
         height="300"
         rx="15"
-        transform="rotate(46.4634 211.48 -6"
+        transform="rotate(46.4634 211.48 -6)"
         fill="#446DF6"
       />
     </svg>

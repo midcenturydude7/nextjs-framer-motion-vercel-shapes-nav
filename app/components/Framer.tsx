@@ -108,7 +108,7 @@ const Tabs = ({
       </AnimatePresence>
       {selectedRect && navRect && (
         <motion.div
-          className={"botoom-0 absolute left-0 z-10 h-[2px] bg-slate-500"}
+          className={"absolute bottom-0 left-0 z-10 h-[2px] bg-slate-500"}
           initial={false}
           animate={{
             width: selectedRect.width * 0.8,
@@ -134,11 +134,17 @@ const Content = ({
   className?: string;
 }): JSX.Element => {
   return (
-    <AnimatePresence mode="wait" custom={direction}>
+    <AnimatePresence exitBeforeEnter={false} custom={direction}>
       <motion.div
         key={selectedTabIndex}
         variants={{
           enter: (direction) => ({
+            opacity: 0,
+            x: direction > 0 ? 100 : -100,
+            scale: 0.8,
+          }),
+          center: { opacity: 1, x: 0, scale: 1, rotate: 0 },
+          exit: (direction) => ({
             opacity: 0,
             x: direction > 0 ? -100 : 100,
             scale: 0.8,
