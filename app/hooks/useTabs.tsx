@@ -1,5 +1,4 @@
 // useTabs hook
-
 import React from "react";
 
 export type Tab = { label: string; id: string; children: React.ReactNode };
