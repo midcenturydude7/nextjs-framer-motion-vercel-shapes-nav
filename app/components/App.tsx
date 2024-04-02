@@ -1,6 +1,7 @@
 // App.tsx Component
 "use client";
 import React from "react";
+import TabsUpdate from "./TabsUpdate";
 import Tabs from "./Tabs";
 import Content from "./Content";
 import { useTabs } from "../hooks/useTabs";
