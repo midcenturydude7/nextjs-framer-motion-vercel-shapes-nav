@@ -52,7 +52,7 @@ export default function Tabs({
           <motion.button
             key={i}
             className={classNames(
-              "text-md relative z-20 flex h-8 cursor-pointer select-none items-center rounded-md bg-transparent px-4 text-sm text-slate-500 transition-colors",
+              "text-md relative z-20 flex h-8 cursor-pointer select-none items-center rounded-md bg-transparent px-4 text-slate-500 transition-colors",
               {
                 "text-slate-700":
                   hoveredTabIndex === i || selectedTabIndex === i,
